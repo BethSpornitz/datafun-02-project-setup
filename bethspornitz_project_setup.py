@@ -56,9 +56,7 @@ def create_prefixed_folders(folder_list: list, prefix: str) -> None:
     for folder_name in folder_list:
         # Create the full folder name with prefix
         full_folder_name = f"{prefix}_{folder_name}"
-        # Create the directory
         os.makedirs(full_folder_name, exist_ok=True)
-        # Print the confirmation message
         print(f"Created folder: {full_folder_name}")
 
 #####################################
